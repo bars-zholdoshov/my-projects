@@ -1,44 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About-me</title>
+    <title>About Me - Barsbek</title>
     <style>
-      .information-box {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial;
+        margin: 0;
       }
 
-      .information-box p {
-        font-size: 18px;
-        line-height: 1.6;
-        color: #333;
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 10px 20px;
+        border-bottom: 2px solid #ccc;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-links a {
+        color: gray;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .nav-links a:hover {
+        color: black;
+      }
+
+      .nav-links a.active {
+        color: black;
+        border-bottom: 3px solid red;
+      }
+
+      .profile {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid #ccc;
+        object-fit: cover;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .information-box {
+        background-color: white;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        width: 80%;
+        margin: 30px auto;
+        padding: 50px;
+        text-align: center;
       }
     </style>
   </head>
+
   <body>
     <div class="navbar">
       <div class="nav-links">
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about-me.html" class="active">About Me</a>
+        <a href="#">Home</a>
+        <a class="active" href="#">About me</a>
+        <a href="#">Contact</a>
+        <a href="#">Resume</a>
       </div>
-      <img src="profile.jpg" alt="Profile" class="profile" />
+
+      <img class="profile" src="https://via.placeholder.com/40" alt="Profile" />
     </div>
 
-    <h1>About Me</h1>
+    <h1>Hey, I'm Barsbek</h1>
+
     <div class="information-box">
-      <p>
-        Hello! I'm Barsbek, a passionate web developer with a love for creating
-        beautiful and functional websites. With a background in computer science
-        and years of experience in the industry, I specialize in front-end
-        development, user experience design, and responsive web design.
-      </p>
-      <p>
-        When I'm not coding, you can find me exploring new technologies, hiking
-        in nature, or experimenting with new recipes in the kitchen. I'm always
-        eager to learn and take on new challenges, so feel free to reach out if
-        you'd like to connect!
-      </p>
+      <p>Information Section</p>
     </div>
   </body>
 </html>
