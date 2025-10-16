@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Me - Barsbek</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial;
+        margin: 0;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 10px 20px;
+        border-bottom: 2px solid #ccc;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-links a {
+        color: gray;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .nav-links a:hover {
+        color: black;
+      }
+
+      .nav-links a.active {
+        color: black;
+        border-bottom: 3px solid red;
+      }
+
+      .profile {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid #ccc;
+        object-fit: cover;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .information-box {
+        background-color: white;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        width: 80%;
+        margin: 30px auto;
+        padding: 50px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a class="active" href="#">About me</a>
+        <a href="#">Contact</a>
+        <a href="#">Resume</a>
+      </div>
+
+      <img class="profile" src="https://via.placeholder.com/40" alt="Profile" />
+    </div>
+
+    <h1>Hey, I'm Barsbek</h1>
+
+    <div class="information-box">
+      <p>Information Section</p>
+    </div>
+  </body>
+</html>
